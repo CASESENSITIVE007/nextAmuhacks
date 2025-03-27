@@ -2,9 +2,7 @@
 "use client";
 import React from "react";
 import { FocusCards } from "./ui/focus-cards";
-import { BackgroundGradient } from "./ui/background-gradient";
-import { IconAppWindow } from "@tabler/icons-react";
-import Image from "next/image";
+
 
 export default function Prize(){
     const cards = [

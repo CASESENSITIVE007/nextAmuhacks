@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function Team() {
   const [user, setUser] = useState("Tech");
-  function handleClick(name:any) {
+  function handleClick(name:string) {
     setUser(name);
     
   }

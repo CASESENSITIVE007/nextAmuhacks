@@ -2,20 +2,20 @@
 import React from "react";
 // import { BackgroundBeams } from "./ui/background-beams";
 import { cn } from "@/lib/utils";
-import { Boxes } from "./ui/background-boxes";
+
 import {useState,useEffect} from "react"
-import { Spotlight } from "./ui/spotlight";
+
 import { Button } from "./ui/moving-border";
 import { Cover } from "./ui/cover";
 
 export default function Hero() {
 
-    const targetDate = new Date(2025, 3, 2, 0, 0, 0);
+    const  targetDate = new Date(2025, 3, 2, 0, 0, 0);
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
 
   const calculateTimeLeft = () => {
     const now = new Date();
-    const difference = targetDate - now;
+    const difference = targetDate.getTime() - now.getTime();
 
     return difference > 0
       ? {
@@ -35,7 +35,7 @@ export default function Hero() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []); // Re-run when timeLeft changes
+  },); // Re-run when timeLeft changes
     
     return (
         <div className="min-h-screen flex flex-col align-middle justify-center items-center " >

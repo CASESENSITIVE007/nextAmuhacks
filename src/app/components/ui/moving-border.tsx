@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React from "react";
 import {
@@ -27,6 +28,7 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
+  
   [key: string]: any;
 }) {
   return (
@@ -82,7 +84,7 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<any>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
