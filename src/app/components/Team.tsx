@@ -12,11 +12,11 @@ function Team() {
     
   }
   //tech, sponcer ,management , pr, organiser
-  const teamsNames = ["Organiser", "PR & Social Media", "Tech"];
+  const teamsNames = ["Organiser", "PR", "Tech"];
   return (
-    <div id="team" className="bg-black text-white flex flex-col justify-center text-center m-10 py-10">
+    <div id="team" className="bg-black min-h-screen text-white flex flex-col justify-center text-center m-10 py-10">
       <div className="flex flex-col items-center  mt-10">
-        <h1 className="text-5xl font-bold mb-6 ">
+        <h1 className="text-6xl font-bold mb-6 ">
           Meet Our Team
         </h1>
 
@@ -26,7 +26,7 @@ function Team() {
               className={`  mt-10 mb-10 cursor-pointer text-sm md:text-2xl p-2  ${
                 user === name
                   ? "bg-slate-500 rounded-lg"
-                  : "hover:rounded-lg  hover:bg-slate-300"
+                  : "hover:rounded-lg  hover:bg-slate-300 : "
               }`}
               onClick={() => handleClick(name)}
               key={name}

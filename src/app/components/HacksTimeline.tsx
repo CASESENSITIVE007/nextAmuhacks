@@ -2,12 +2,12 @@ import { Timeline } from "./ui/timeline";
 export default function HacksTimeline() {
   const data = [
     {
-      title: " Software Hackathon:",
+      title: "Hackathon Start",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-            A hybrid hackathon that empowers creative minds to innovate and
-            showcase groundbreaking projects on a national stage
+           Saturday 6pm
+           
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
             <ul>
@@ -89,6 +89,7 @@ export default function HacksTimeline() {
   ];
   return (
     <div id="timeline" className="w-full mt-30 min-h-screen ">
+  
       <Timeline data={data} />
     </div>
   );

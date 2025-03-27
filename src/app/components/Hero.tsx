@@ -49,16 +49,18 @@ export default function Hero() {
         {/* <Boxes/> */}
    
         <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
-          <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
+          <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-5xl font-bold text-transparent md:text-7xl">
           AMUHACKS 4.O <br /> <Cover>11-April-25</Cover>
           </h1>
           <div className=" flex  justify-center m-2 " >
+          <a href="https://devfolio.co" target="_blank" >
           <Button
         borderRadius="1.75rem"
         className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 flex mx-auto justify-center items-center  "
       >
         Apply Here
       </Button>
+      </a>
           </div>
         
           <div className="text-4xl p-4 mx-auto justify-center rounded-lg shadow-lg flex  ">

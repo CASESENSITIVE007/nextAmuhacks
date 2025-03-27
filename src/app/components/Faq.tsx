@@ -6,8 +6,9 @@ import {
   } from "./ui/accordion"
 export default function Faq (){
     return (
-        <div id="faq" className=" text-white text-2xl w-1/2 mx-auto  " >
+        <div id="faq" className="  min-h-screen flex flex-col items-center justify-center  text-white text-2xl w-1/2 mx-auto  " >
               <Accordion type="single" collapsible className="w-full">
+                <h1 className='text-6xl flex flex-col justify-center items-center mx-auto  ' >FAQ&apos;s</h1>
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>

@@ -6,7 +6,7 @@ export default function About(){
         className="text-white min-h-screen flex flex-col justify-center items-center px-4 sm:px-6"
       >
         <div className="w-full sm:w-3/4 max-w-screen-md text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">AMU HACKS?</h1>
+          <h1 className="text-6xl  font-bold mb-6">AMU HACKS?</h1>
           <p className="text-xl sm:text-xl leading-relaxed tracking-wide font-lucky">
             The <b>Computer Science Society</b> (CSS) is the dynamic and official club of the{" "}
             <b>Department of Computer Science at Aligarh Muslim University</b> (AMU). With Prof. Arman

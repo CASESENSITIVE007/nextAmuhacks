@@ -1,22 +1,47 @@
-import { University, HeartPulse, CircleDollarSign } from "lucide-react";
 
-function Themes() {
-  return (
-    <div id="themes" className=" " >
-    <h1 className="text-4xl m-10 text-white  text-center ">THEMES</h1>
-    <div className=  " text-white min-h-screen  grid grid-cols-2  md:grid-cols-3  gap-6 justify-items-center p-4">
-      
+"use client";
+import React from "react";
+import { FocusCards } from "./ui/focus-cards";
 
-      <University size={100} />
-      
-      <HeartPulse size={100} />
-      <CircleDollarSign size={100} />
-      <University size={100} />
-      <HeartPulse size={100} />
-      <CircleDollarSign size={100} />
-    </div>
-    </div>
-  );
+
+export default function Themes(){
+    const cards = [
+        {
+          title: "Education",
+          src: "/graduation.png",
+        },
+        {
+          title: "community empowerment",
+          src: "/empowerment.png",
+        },
+        {
+          title: "Cyber Crime Prevention",
+          src: "/spyware.png",
+        },
+        {
+          title: "Smart City Development",
+          src: "/smart-city1.png",
+        },
+        {
+          title: "Health Care Innovation",
+          src: "/cardiogram.png",
+        },
+        {
+          title: "Finance",
+          src: "/salary.png",
+        },
+            ]
+    return (
+        <div id="prizes" className="min-h-screen  mt-20 " >
+            <h1 className="mx-auto flex justify-center text-6xl text-white " >THEMES</h1>
+        <div className="flex justify-around overflow-auto  flex-wrap m-10 mt-10 mb-10 p-10 " >
+
+       
+       <FocusCards cards={cards} />
+ 
+        </div>
+
+        </div>
+        
+    )
 }
-
-export default Themes;
