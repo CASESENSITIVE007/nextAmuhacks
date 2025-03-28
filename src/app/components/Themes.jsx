@@ -32,7 +32,7 @@ export default function Themes(){
         },
             ]
     return (
-        <div id="prizes" className="min-h-screen  mt-20 " >
+        <div id="themes" className="min-h-screen  mt-20 " >
             <h1 className="mx-auto flex justify-center text-6xl text-white " >THEMES</h1>
         <div className="flex justify-around overflow-auto  flex-wrap m-10 mt-10 mb-10 p-10 " >
 

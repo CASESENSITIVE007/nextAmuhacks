@@ -65,7 +65,7 @@ export default function Hero() {
           <div className=" flex  justify-center m-2 " >
           <div 
 	className="apply-button " 
-	data-hackathon-slug="https://amuhacks-kappa.vercel.app/" 
+	data-hackathon-slug="amuhacks" 
 	data-button-theme="dark"
 
 ></div>
