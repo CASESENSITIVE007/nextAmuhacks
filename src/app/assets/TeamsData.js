@@ -1,136 +1,52 @@
-
-
+import saad from "../components/images/saad.jpg"
+import sameer from "../components/images/sameer.jpg";
+import aftab from "../components/images/aftab.jpg";
+// import ahmad from ".components/images/Ahmad.jpg";
+// import ahwar from ".components/images/ahwar.jpg";
+// import amir from ".components/images/amir.jpg";
+// import faraz from ".components/images/Faraz.jpg";
+// import haseen from ".components/images/Haseen.jpg";
+// import madni from ".components/images/madni-mahmood.jpg";
+// import sameer from "./components/images/mohammadsameer.jpg";
+// import muneeba from ""
+// import rayyan from ""
+// import saad from ""
+// import sameer from ""
+// import sarim from ""
+// import saurav from ""
+// import tuba from ""
+// import saadphoto from "./images/saadphoto.jpg";
 
 const teams = [
     {
       id: "t1",
-      name: "saad",
-     
+      name: "Saad",
+      image: saad,
       role: "Tech",
-      designation: "mca student",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "t4",
-      name: "saad",
-      role: "Tech",
-      designation: "mca student",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "t5",
-      name: "saad",
-      role: "Tech",
-      designation: "mca student",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "t6",
-      name: "saad",
-      role: "Tech",
-      designation: "mca student",
+      designation: "Mca student",
       linkdin: "url",
       github: "url",
     },
     {
       id: "t2",
-      name: "saad",
+      name: "Sameer",
+      image:sameer,
       role: "Tech",
-      designation: "mca student",
+      designation: "Mca student",
       linkdin: "url",
       github: "url",
     },
     {
-      id: "t3",
-      name: "saad",
-      role: "Tech",
-      designation: "mca student",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "o1",
-      name: "saad",
-      role: "Organiser",
-      designation: "Organiser",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "o2",
-      name: "saad",
-      role: "Organiser",
-      designation: "Organiser",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "s1",
-      name: "saad",
-      role: "Sponcer",
-      designation: "Sponcer",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "s2",
-      name: "saad",
-      role: "Sponcer",
-      designation: "Sponcer",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "s3",
-      name: "saad",
-      role: "Sponcer",
-      designation: "Sponcer",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "p1",
-      name: "saad",
-      role: "Pr",
-      designation: "Pr",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "p2",
-      name: "saad",
-      role: "Pr",
-      designation: "Pr",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "m1",
-      name: "saad",
-      role: "Management",
-      designation: "Management",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "m2",
-      name: "saad",
-      role: "Management",
-      designation: "Management",
-      linkdin: "url",
-      github: "url",
-    },
-    {
-      id: "m3",
-      name: "saad",
-      role: "Management",
-      designation: "Management",
-      linkdin: "url",
-      github: "url",
-    },
+      id:"o1",
+      name:"Aftab",
+      image:aftab,
+      role:"Organiser",
+      designation:"MCA",
+      linkdin:"",
+      github:"",
+    }
+  
+ 
   ];
 
   export default teams;

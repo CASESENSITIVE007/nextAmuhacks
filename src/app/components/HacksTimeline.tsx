@@ -6,19 +6,13 @@ export default function HacksTimeline() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-           Saturday 6pm
-           
+           April 12, 2025
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
             <ul>
-              <li>Entry Fee: Free</li>
-              <li>Team Size: 2-4</li>
-              <li> Prototype Submission Deadline: 7th April</li>
-              <li> GitHub Profile/Repo Creation: Between 4th - 7th April</li>
-              <li>
-                Announcement of Top 10 Projects: 9th April Final Presentation:
-                12th April
-              </li>
+          
+             
+           
             </ul>
           </p>
         </div>

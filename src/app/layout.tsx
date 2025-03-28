@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import localFont from 'next/font/local'; 
 
@@ -33,6 +33,7 @@ export default function RootLayout({
         className={`${myFont.className}  antialiased `}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

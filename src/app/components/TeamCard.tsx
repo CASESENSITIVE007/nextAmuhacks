@@ -9,7 +9,7 @@ interface TeamMember  {
   // add other properties as needed
 };
 
-function TeamCard({ image, name, designation, linkedin, github }: TeamMember) {
+function TeamCard({ image, name, designation, linkedin,github }: TeamMember) {
   return (
     <div className=" text-white p-4  rounded-lg shadow-lg   flex flex-col items-center">
       <Image src={image} alt="image" className="rounded-full mb-4" width={160} height={160} />

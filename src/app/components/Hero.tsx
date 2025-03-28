@@ -5,10 +5,20 @@ import { cn } from "@/lib/utils";
 
 import {useState,useEffect} from "react"
 
-import { Button } from "./ui/moving-border";
 import { Cover } from "./ui/cover";
 
 export default function Hero() {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
 
     const  targetDate = new Date(2025, 3, 2, 0, 0, 0);
   targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
@@ -53,14 +63,12 @@ export default function Hero() {
           AMUHACKS 4.O <br /> <Cover>11-April-25</Cover>
           </h1>
           <div className=" flex  justify-center m-2 " >
-          <a href="https://devfolio.co" target="_blank" >
-          <Button
-        borderRadius="1.75rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 flex mx-auto justify-center items-center  "
-      >
-        Apply Here
-      </Button>
-      </a>
+          <div 
+	className="apply-button " 
+	data-hackathon-slug="https://amuhacks-kappa.vercel.app/" 
+	data-button-theme="dark"
+
+></div>
           </div>
         
           <div className="text-4xl p-4 mx-auto justify-center rounded-lg shadow-lg flex  ">

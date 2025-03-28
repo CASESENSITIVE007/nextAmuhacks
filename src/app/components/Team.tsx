@@ -1,6 +1,5 @@
 "use client"
 
-import saadphoto from "./images/saadphoto.jpg";
 import teams from "../assets/TeamsData.js"
 import TeamCard from "./TeamCard";
 import { useState } from "react";
@@ -42,7 +41,7 @@ function Team() {
             return (
               <div className="m-4 " key={teamMember.id}>
                 <TeamCard
-                  image={saadphoto}
+                  image={teamMember.image}
                   name={teamMember.name}
                   designation={teamMember.designation}
                   linkedin={teamMember.linkdin}
