@@ -14,7 +14,7 @@ import madni from "../components/images/madni-mahmood.jpg";
 //pr team
 import rayyan from "../components/images/rayyan.jpg"
 import muneeba from "../components/images/muneeba.jpg"
-import haseen from "../components/images/haseen.jpg"
+import haseen from "../components/images/Haseen.jpg"
 import Ahmad from "../components/images/Ahmad.jpg";
 //arib
 
