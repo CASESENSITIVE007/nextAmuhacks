@@ -5,13 +5,13 @@ import TeamCard from "./TeamCard";
 import { useState } from "react";
 
 function Team() {
-  const [user, setUser] = useState("Tech");
+  const [user, setUser] = useState("Organiser");
   function handleClick(name:string) {
     setUser(name);
     
   }
   //tech, sponcer ,management , pr, organiser
-  const teamsNames = ["Organiser", "PR", "Tech"];
+  const teamsNames = ["Organiser", "Tech", "Graphics","PR"];
   return (
     <div id="team" className="bg-black min-h-screen text-white flex flex-col justify-center text-center m-10 py-10">
       <div className="flex flex-col items-center  mt-10">
@@ -45,7 +45,6 @@ function Team() {
                   name={teamMember.name}
                   designation={teamMember.designation}
                   linkedin={teamMember.linkdin}
-                  github={teamMember.github}
                 />
               </div>
             );

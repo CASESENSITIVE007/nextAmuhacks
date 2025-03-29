@@ -65,7 +65,7 @@ export default function Hero() {
           <div className=" flex  justify-center m-2 " >
           <div 
 	className="apply-button " 
-	data-hackathon-slug="amuhacks" 
+	data-hackathon-slug="amu-hacks-4" 
 	data-button-theme="dark"
 
 ></div>

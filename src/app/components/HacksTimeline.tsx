@@ -2,79 +2,81 @@ import { Timeline } from "./ui/timeline";
 export default function HacksTimeline() {
   const data = [
     {
-      title: "Hackathon Start",
+      title: "11th Apr 10:00 PM",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-           April 12, 2025
+          Registration Ends
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-            <ul>
-          
-             
-           
-            </ul>
+          We will review your application and will let you know.
+          </p>
+        </div>
+      ),
+    },
+   
+  
+    {
+      title: "12th Apr 3:00 PM",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
+          Opening Ceremony
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
+          Let &apos;s kickoff DUHacks 4.0 with us !
           </p>
         </div>
       ),
     },
     {
-      title: " Capture The Flag",
+      title: "12th Apr 6:00 PM",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-          An electrifying cybersecurity challenge that tests your problem-solving and ethical hacking
-          skills in a race against time.
+          Hacking Period Starts on DevFolio
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-          <ul>
-              <li>Entry Fee: INR 50 per team</li>
-              <li>Team Size: 1-2</li>
-              <li>Date: 7 April </li>
-              <li>Time: 6:00 PM - 8:00 PM</li>
-             
-            </ul>
+          Join with over 3000+ innovative minds and start building
+          </p>
+        </div>
+      ),
+    },
+ 
+
+    
+    {
+      title: "14th Apr 6:00 AM",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
+          Final Submission Ends
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
+          We &apos;ll review your project and will let you know.
           </p>
         </div>
       ),
     },
     {
-      title: "Coding Competition",
+      title: "15th Apr 11:59 PM",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-          A fast-paced coding contest exclusively for AMU students, where algorithmic prowess
-          meets competitive spirit.
+         Top 10  teams announce
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-          <ul>
-              <li> Entry Fee: INR 40 per person</li>
-              <li>Date: 8 April </li>
-              <li>Time: 3:00 PM - 4:00 PM </li>
-          
-             
-            </ul>
-          </p>
+        
         </div>
       ),
     },
     {
-      title: "Quiz Competition",
+      title: "17th Apr 3:00 PM",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-          A riveting quiz battle that challenges teams on Computer and IT knowledge, igniting a
-          spirit of intellectual rivalry.
+         Final Presentation
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-md font-normal mb-8">
-         <ul>
-          <li>Entry Fee: INR 100 per team</li>
-          <li>Team Size: 3-4</li>
-          <li>Date: 9 April </li>
-          <li>Time: 3:00 PM - 5:00 PM</li>
-          <li>Venue: Conference Hall, Department of Computer Science, AMU</li>
-         </ul>
-          </p>
+        
         </div>
       ),
     },
