@@ -14,7 +14,7 @@ import madni from "../components/images/madni-mahmood.jpg";
 //pr team
 import rayyan from "../components/images/rayyan.jpg"
 import muneeba from "../components/images/muneeba.jpg"
-import haseen from "../components/images/Haseen.jpg"
+import Haseen from "../components/images/Haseen.jpg"
 import Ahmad from "../components/images/Ahmad.jpg";
 //arib
 
@@ -152,7 +152,7 @@ const teams = [
 {
   id:"p3",
   name:"Haseen",
-  image:haseen,
+  image:Haseen,
   role:"PR",
   designation:"BCA",
   linkdin:"https://in.linkedin.com/in/haseen-fatima-1652b2327",
