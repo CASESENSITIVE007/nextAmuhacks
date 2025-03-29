@@ -78,12 +78,7 @@ export default function Faq (){
         	The project must be hosted and accessible.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-12">
-        <AccordionTrigger>How do we submit our project?</AccordionTrigger>
-        <AccordionContent>
-        Teams must submit their GitHub repository link via the official form shared by the organizers.
-        </AccordionContent>
-      </AccordionItem>
+     
       <AccordionItem value="item-13">
         <AccordionTrigger>What are the judging criteria?</AccordionTrigger>
         <AccordionContent>

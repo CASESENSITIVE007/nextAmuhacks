@@ -10,8 +10,7 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    card: any;
+    card: Card;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -20,7 +19,8 @@ export const Card = React.memo(
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "rounded-lg relative text-2xl bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ",
+        "relative text-2xl bg-gray-100 overflow-hidden dark:bg-neutral-900 overflow-hidden w-full transition-all duration-300 ease-out rounded-lg",
+        hovered === index ? "h-[750px] md:h-[500px]" : "h-[250px] md:h-[350px]", // Dynamic height
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
@@ -28,17 +28,20 @@ export const Card = React.memo(
         src={card.src}
         alt={card.title}
         fill
-        className="object-cover absolute inset-0"
+        className="object-cover absolute inset-0 transition-all duration-300"
       />
       <div
         className={cn(
-          "absolute inset-0 text-2xl bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
+          "absolute inset-0 bg-black/60 flex flex-col justify-center items-center px-6 transition-all duration-300",
           hovered === index ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className=" md:text-5xl  text-4xl text-center items-center mx-auto  font-medium  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+        <h3 className="text-3xl md:text-4xl font-semibold text-white text-center">
           {card.title}
-        </div>
+        </h3>
+        <p className="text-lg md:text-xl text-neutral-300 mt-3 text-center leading-relaxed">
+          {card.description}
+        </p>
       </div>
     </div>
   )
@@ -49,13 +52,14 @@ Card.displayName = "Card";
 type Card = {
   title: string;
   src: string;
+  description: string;
 };
 
-export function FocusCards({ cards }: { cards: Card[] }) {
+export function ThemeCard({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 text-2xl  md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
+    <div className="grid grid-cols-1 text-2xl md:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-8 w-full">
       {cards.map((card, index) => (
         <Card
           key={card.title}

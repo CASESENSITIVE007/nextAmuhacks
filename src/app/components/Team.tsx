@@ -35,7 +35,7 @@ function Team() {
           ))}
         </ul>
       </div>
-      <div className="w-3/4 mx-auto flex flex-wrap justify-center gap-10">
+      <div className="w-3/4  md:w-1/2 mx-auto flex flex-wrap justify-center gap-10">
         {teams.map((teamMember) => {
           if (teamMember.role === user) {
             return (
